@@ -4,6 +4,103 @@ import { motion } from "framer-motion"
 import { portfolioData } from "../../lib/data"
 import { ArrowRight, Github, ExternalLink } from "lucide-react"
 
+function VintageMac() {
+  return (
+    <svg viewBox="0 0 500 600" className="w-full max-w-[420px] h-auto">
+      <ellipse cx="250" cy="570" rx="180" ry="20" fill="black" opacity="0.08"/>
+      
+      <g transform="translate(30, 480)">
+        <rect x="0" y="0" width="440" height="80" rx="6" fill="#D4CFC7"/>
+        <rect x="0" y="0" width="440" height="76" rx="6" fill="#E8E4DC"/>
+        {[0,1,2,3,4,5,6,7,8,9,10,11].map(i => (
+          <rect key={`r1-${i}`} x={10 + i * 35} y="8" width="30" height="14" rx="2" fill="#F5F2EC"/>
+        ))}
+        {[0,1,2,3,4,5,6,7,8,9,10,11].map(i => (
+          <rect key={`r2-${i}`} x={10 + i * 35} y="26" width="30" height="14" rx="2" fill="#F5F2EC"/>
+        ))}
+        {[0,1,2,3,4,5,6,7,8,9,10,11].map(i => (
+          <rect key={`r3-${i}`} x={10 + i * 35} y="44" width="30" height="14" rx="2" fill="#F5F2EC"/>
+        ))}
+        <rect x="10" y="62" width="200" height="14" rx="2" fill="#F5F2EC"/>
+        <rect x="220" y="62" width="210" height="14" rx="2" fill="#F5F2EC"/>
+      </g>
+
+      <rect x="50" y="20" width="400" height="460" rx="16" fill="#F0EBE3"/>
+      <rect x="50" y="20" width="400" height="455" rx="16" fill="#E8E4DC"/>
+      
+      <rect x="75" y="45" width="350" height="280" rx="12" fill="#1A1A1A"/>
+      
+      <rect x="85" y="55" width="330" height="260" rx="8" fill="#0D0D0D"/>
+      
+      <defs>
+        <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="2" x2="4" y2="2" stroke="black" strokeWidth="0.5" opacity="0.15"/>
+        </pattern>
+      </defs>
+      <rect x="85" y="55" width="330" height="260" rx="8" fill="url(#scanlines)"/>
+      
+      <rect x="85" y="55" width="330" height="260" rx="8" fill="radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.4) 100%)"/>
+      
+      <g fontFamily="monospace" fontSize="10">
+        <rect x="95" y="65" width="310" height="18" rx="2" fill="rgba(255,255,255,0.05)"/>
+        <text x="105" y="77" fill="#888" fontSize="8">Deepanshi OS v1.0</text>
+        
+        <text x="105" y="100" fill="#5AC8FA" fontSize="9">●</text>
+        <text x="118" y="100" fill="#ccc" fontSize="9">About</text>
+        
+        <text x="105" y="118" fill="#FF9500" fontSize="9">●</text>
+        <text x="118" y="118" fill="#ccc" fontSize="9">Projects</text>
+        
+        <text x="105" y="136" fill="#AF52DE" fontSize="9">●</text>
+        <text x="118" y="136" fill="#ccc" fontSize="9">AI</text>
+        
+        <text x="105" y="154" fill="#FF2D55" fontSize="9">●</text>
+        <text x="118" y="154" fill="#ccc" fontSize="9">Creative</text>
+        
+        <text x="105" y="172" fill="#34C759" fontSize="9">●</text>
+        <text x="118" y="172" fill="#ccc" fontSize="9">Resume</text>
+        
+        <text x="105" y="200" fill="#666" fontSize="8">deepanshi@portfolio ~ %</text>
+        <text x="245" y="200" fill="#4CD964" fontSize="9">_</text>
+      </g>
+      
+      <rect x="180" y="340" width="140" height="10" rx="5" fill="#2A2A2A"/>
+      <rect x="185" y="342" width="130" height="6" rx="3" fill="#1A1A1A"/>
+      
+      <g transform="translate(235, 375)">
+        <circle cx="0" cy="0" r="14" fill="none"/>
+        <path d="M-8,-6 Q-8,-12 0,-12 Q8,-12 8,-6 Q8,0 0,0 Q-8,0 -8,-6" fill="#FF3B30"/>
+        <path d="M-8,0 Q-8,-6 0,-6 Q8,-6 8,0 Q8,6 0,6 Q-8,6 -8,0" fill="#FF9500"/>
+        <path d="M-8,6 Q-8,0 0,0 Q8,0 8,6 Q8,12 0,12 Q-8,12 -8,6" fill="#FFCC00"/>
+        <path d="M-8,6 Q-8,0 0,0 Q8,0 8,6" fill="#34C759" opacity="0.3"/>
+        <path d="M-2,-14 Q2,-18 6,-14 Q4,-10 0,-10 Q-4,-10 -2,-14" fill="#FF3B30"/>
+        <path d="M-2,-14 Q2,-18 6,-14" fill="none" stroke="#FF3B30" strokeWidth="2"/>
+      </g>
+      
+      <circle cx="120" cy="400" r="12" fill="#FF6B35" opacity="0.9"/>
+      
+      <g transform="translate(150, 395)">
+        <rect x="0" y="0" width="18" height="18" rx="3" fill="white" transform="rotate(15 9 9)"/>
+        <polygon points="9,2 11,7 16,7 12,10 13,15 9,12 5,15 6,10 2,7 7,7" fill="#0066CC" transform="rotate(15 9 9) scale(0.7) translate(4,4)"/>
+      </g>
+      
+      <g transform="translate(280, 390)">
+        <rect x="0" y="0" width="70" height="22" rx="2" fill="#8B0000"/>
+        <text x="35" y="9" textAnchor="middle" fill="white" fontSize="5" fontFamily="monospace" fontWeight="bold">MACHINE</text>
+        <text x="35" y="17" textAnchor="middle" fill="white" fontSize="5" fontFamily="monospace" fontWeight="bold">INTELLIGENCE</text>
+      </g>
+      
+      <g transform="translate(380, 390)">
+        {[0,1,2,3].map(row =>
+          [0,1,2,3].map(col => (
+            <rect key={`g-${row}-${col}`} x={col * 5} y={row * 5} width="3" height="3" rx="1" fill="#333"/>
+          ))
+        )}
+      </g>
+    </svg>
+  )
+}
+
 export default function Hero() {
   const { featuredProject, hero } = portfolioData
 
@@ -64,36 +161,13 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <div className="flex-1 flex items-center justify-center p-8 lg:p-16">
+        <div className="flex-1 flex items-center justify-center p-8 lg:p-12">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="relative"
           >
-            <div className="w-72 lg:w-96 bg-[#e8e4dc] dark:bg-[#2a2824] rounded-3xl p-4 shadow-2xl border border-black/5">
-              <div className="bg-[#1a1a1a] rounded-2xl p-4 pb-8 relative overflow-hidden crt-screen">
-                <div className="bg-[#0a0a0a] rounded-lg p-4 min-h-[200px] font-mono text-xs text-green-400">
-                  <div className="mb-4 text-center text-white/60 border-b border-white/10 pb-2">
-                    Deepanshi OS v1.0
-                  </div>
-                  <div className="space-y-1.5">
-                    <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-blue-400" /><span className="text-white/80">About</span></div>
-                    <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-orange-400" /><span className="text-white/80">Projects</span></div>
-                    <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-purple-400" /><span className="text-white/80">AI</span></div>
-                    <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-pink-400" /><span className="text-white/80">Creative</span></div>
-                    <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-400" /><span className="text-white/80">Resume</span></div>
-                    <div className="mt-4 text-white/40">deepanshi@portfolio ~ % <span className="animate-blink">_</span></div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-3 mx-auto w-32 h-2 bg-[#d0ccc4] dark:bg-[#1e1c18] rounded-full" />
-              <div className="mt-4 flex justify-center">
-                <div className="w-6 h-6 rounded-full bg-gradient-to-b from-red-400 via-yellow-400 to-green-400 opacity-80" />
-              </div>
-            </div>
-            <div className="w-80 lg:w-[28rem] h-4 bg-[#d8d4cc] dark:bg-[#242220] mx-auto rounded-b-xl shadow-lg mt-1" />
-            <div className="w-64 lg:w-80 h-2 bg-[#c8c4bc] dark:bg-[#1e1c18] mx-auto rounded-b-lg opacity-60" />
+            <VintageMac />
           </motion.div>
         </div>
       </div>
