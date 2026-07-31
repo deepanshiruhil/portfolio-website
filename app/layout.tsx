@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, EB_Garamond, JetBrains_Mono } from 'next/font/google'
+import { ThemeProvider } from './components/ThemeProvider'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -36,7 +37,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${cormorant.variable} ${ebGaramond.variable} ${jetbrains.variable} antialiased`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
